@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Poppins } from "next/font/google";
+import { Nunito } from "next/font/google";
 import Navbar from "@/components/shared/navbar";
+// import { SmoothCursor } from "@/components/ui/smooth-cursor";
 
 
-const poppins = Poppins({
+const nunito = Nunito({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"]
 })
@@ -23,10 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} antialiased`}
+        className={`${nunito.className} antialiased`}
       >
         <Navbar />
         {children}
+        {/* <SmoothCursor /> */}
       </body>
     </html>
   );

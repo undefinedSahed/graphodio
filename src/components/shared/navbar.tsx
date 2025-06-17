@@ -6,7 +6,6 @@ import Link from "next/link"
 import Image from "next/image"
 import {
     Home,
-    Calendar,
     Briefcase,
     Eye,
     Menu,
@@ -19,6 +18,7 @@ import { FcAbout } from "react-icons/fc";
 import { cn } from "@/lib/utils"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
+import { BiQuestionMark } from "react-icons/bi"
 
 interface NavItem {
     name: string
@@ -34,7 +34,7 @@ const navigationLinks: NavItem[] = [
     { name: "About Us", href: "/about-us", icon: FcAbout },
     { name: "Services", href: "/services", icon: GrServices },
     { name: "Portfolio", href: "/portfolio", icon: Eye },
-    { name: "FAQ", href: "/faq", icon: Calendar },
+    { name: "FAQ", href: "/faq", icon: BiQuestionMark },
     { name: "Contact", href: "/contact", icon: Briefcase },
 ]
 
@@ -154,7 +154,7 @@ export default function Navbar() {
                             <div className="lg:hidden">
                                 <Sheet open={open} onOpenChange={setOpen}>
                                     <SheetTrigger asChild>
-                                        <Button variant="outline" size="icon" className="h-8 w-8 rounded-full">
+                                        <Button size="icon" className="h-8 w-8 rounded-full">
                                             <Menu className="h-4 w-4" />
                                             <span className="sr-only">Toggle menu</span>
                                         </Button>
