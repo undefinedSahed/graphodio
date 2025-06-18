@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Nunito } from "next/font/google";
 import Navbar from "@/components/shared/navbar";
-// import { SmoothCursor } from "@/components/ui/smooth-cursor";
-import SplashCursor from "@/components/ip/SplashCursor";
+import SplashCursor from "@/components/cursor/SplashCursor";
 
 
 const nunito = Nunito({
@@ -30,7 +29,6 @@ export default function RootLayout({
         <Navbar />
         {children}
         <SplashCursor />
-        {/* <SmoothCursor /> */}
       </body>
     </html>
   );
