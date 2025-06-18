@@ -73,9 +73,6 @@
     --color-4: oklch(80.2% 0.134 225);
     --color-5: oklch(90.7% 0.231 133);
   }
-  .theme {
-    --animate-rainbow: rainbow var(--speed, 2s) infinite linear;
-  }
 }
 
 @layer base {
@@ -89,17 +86,6 @@
 
 @layer components {
   .container {
-    @apply max-w-[1280px] mx-auto;
-  }
-}
-
-@theme inline {
-  @keyframes rainbow {
-  0% {
-    background-position: 0%;
-    }
-  100% {
-    background-position: 200%;
-    }
+    @apply max-w-[1320px] mx-auto px-2;
   }
 }

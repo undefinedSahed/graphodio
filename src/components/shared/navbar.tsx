@@ -55,7 +55,6 @@ export default function Navbar() {
 
     return (
         <>
-            {/* Main Navigation Container */}
             <header
                 className={cn(
                     "fixed top-0 left-1/2 -translate-x-1/2 z-50 w-full transition-all duration-700 ease-in-out",
@@ -207,7 +206,7 @@ export default function Navbar() {
             </header>
 
             {/* Mobile Bottom Navigation */}
-            <div className="lg:hidden fixed bottom-0 left-1/2 -translate-x-1/2 z-40 mb-6">
+            <div className="lg:hidden fixed -bottom-3 left-1/2 -translate-x-1/2 z-40 mb-6">
                 <div className="flex items-center gap-1 bg-white/10 border border-gray-200/50 backdrop-blur-lg py-1 px-1 rounded-full shadow-lg">
                     {navigationLinks.slice(0, 5).map((item) => {
                         const Icon = item.icon
@@ -248,9 +247,6 @@ export default function Navbar() {
                     })}
                 </div>
             </div>
-
-            {/* Spacer to prevent content from hiding behind navbar */}
-            <div className={cn("transition-all duration-700", scrolled ? "h-16" : "h-20")} />
         </>
     )
 }
