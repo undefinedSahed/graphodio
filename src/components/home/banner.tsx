@@ -1,8 +1,8 @@
 import React from 'react'
 import { Button } from '../ui/button'
 import Link from 'next/link'
-// import { Globe } from '../magicui/globe'
-// import Image from 'next/image'
+import { Globe } from '../magicui/globe'
+import Image from 'next/image'
 import { BoxReveal } from '../magicui/box-reveal'
 
 export default function Banner() {
