@@ -1,8 +1,8 @@
 import React from 'react'
 import { Button } from '../ui/button'
 import Link from 'next/link'
-import { Globe } from '../magicui/globe'
-import Image from 'next/image'
+// import { Globe } from '../magicui/globe'
+// import Image from 'next/image'
 import { BoxReveal } from '../magicui/box-reveal'
 
 export default function Banner() {
@@ -32,7 +32,7 @@ export default function Banner() {
                             </BoxReveal>
                         </div>
                     </div>
-                    <div className="relative hidden lg:flex size-full max-w-lg lg:h-[500px] items-center justify-center overflow-hidden rounded-lg px-40">
+                    {/* <div className="relative hidden lg:flex size-full max-w-lg lg:h-[500px] items-center justify-center overflow-hidden rounded-lg px-40">
                         <Image
                             src="/images/logo.png"
                             alt='logo'
@@ -51,7 +51,7 @@ export default function Banner() {
                             className='w-36 object-contain absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30'
                         />
                         <Globe className="-top-7 z-20" />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>
