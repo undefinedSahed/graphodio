@@ -1,11 +1,12 @@
+import PortfolioGrid from "@/components/services/portfolio-grid";
+import CommonBanner from "@/components/shared/common_banner";
 
 
 export default function Home() {
     return (
         <main>
-            <div className="container pt-10 text-center">
-                Our Portfolio Page is Coming Soon
-            </div>
+            <CommonBanner title='Portfolio' />
+            <PortfolioGrid />
         </main>
     );
 }
